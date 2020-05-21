@@ -1,0 +1,55 @@
+.newsletter {
+  background: #e7e4d8;
+  padding: rem(30) 0;
+
+  h2 {
+    font-size: rem(32);
+    text-transform: capitalize;
+  }
+
+  p {
+    text-transform: lowercase;
+    font: {
+      style: italic;
+      size: rem(18);
+    }
+  }
+
+  .input-text {
+    border: 3px solid #252525;
+    padding: rem(10);
+    width: calc(100% - 140px);
+    height: 50px;
+    font: {
+      size: rem(22);
+      style: italic;
+      family: $font-family;
+    }
+    background: none;
+    
+    @include d(s) {
+      width: 100%;
+    }
+  }
+
+  .btn-enviar {
+    background: #252525;
+    border: none;
+    font-family: $font-family;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    width: rem(140);
+    color: #fff;
+    cursor: pointer;
+    @include d(s) {
+      width: 100%;
+      padding: rem(10) 0;
+    }
+  }
+
+  form {
+    @include d(s) {
+      margin-top: rem(20);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  padding: rem(20) calc((100% - 960px) / 2);
+  background: $primary-color;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    margin-left: rem(20);
+  }
+  
+  nav {
+    position: relative;
+    &::before {
+      content: '';
+      @include d(s) {
+        content: '';
+        height: rem(3);
+        width: rem(25);
+        display: block;
+        background: $white;
+        border-radius: rem(5);
+        box-shadow: 0 rem(8) 0 $white, 0 rem(-8) 0 $white;
+        margin-right: rem(20);
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        padding: rem(10);
+        color: $white;
+        font: {
+          size: rem(18)
+        }
+      }
+      @include d(s) {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: rem(34);
+        background: $primary-color;
+        width: rem(130);
+        padding: rem(10) 0;
+        cursor: pointer;
+        
+        & li + li {
+          margin-top: rem(10);
+        }
+      }
+      &.ativo {
+        @include d(s) {
+          display: block;
+        }
+      }
+    }
+  }
+}

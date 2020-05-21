@@ -1,0 +1,23 @@
+.footer {
+  background: #d6d3c8;
+  padding: rem(60) 0;
+  @include d(s) {
+    padding: rem(30) 0;
+  }
+
+  p {
+    font: {
+      size: rem(17);
+    }
+    line-height: 1.4rem;
+    @include d(s) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  .right {
+    @include d(s) {
+      justify-content: flex-start;
+    }
+  }
+}

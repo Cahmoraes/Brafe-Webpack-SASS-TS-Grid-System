@@ -1,0 +1,29 @@
+.main {
+  background: url('../assets/images/bg-intro.jpg') no-repeat center center;
+  background-size: cover;
+  padding: rem(150) 0;
+  color: $white;
+  text-align: center;
+
+  @include d(s) {
+    padding: rem(60) 0;
+  }
+  
+  h1 {
+    font-size: rem(46);
+    &::after {
+      content: '';
+      display: block;
+      background: $white;
+      margin: rem(10) auto;
+      height: rem(4);
+      width: rem(20);
+    }
+    @include d(s) {
+      font-size: rem(32);
+    }
+  }
+  p {
+    font-style: italic;
+  }
+}

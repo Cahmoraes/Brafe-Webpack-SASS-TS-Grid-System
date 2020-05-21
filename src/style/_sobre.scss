@@ -1,0 +1,35 @@
+.sobre {
+  padding: rem(60) 0;
+  
+  h1 {
+    text-align: center;
+    font: {
+      size: rem(32);
+    }
+    margin-bottom: rem(30);
+  }
+  
+  h3 {
+    width: rem(220);
+    background: $primary-color;
+    color: $white;
+    text-align: center;
+    position: relative;
+    font: {
+     style: italic; 
+     weight: normal;
+     size: rem(36);
+    }
+    top: rem(-25);
+    padding: rem(5) 0 rem(10);
+  }
+
+  p {
+    max-width: rem(460);
+    margin: rem(20) auto;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.4rem;
+    padding: 0 rem(10);
+  }
+}

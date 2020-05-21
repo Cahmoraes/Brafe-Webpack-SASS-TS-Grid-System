@@ -1,0 +1,23 @@
+.locais {
+  padding: rem(60) 0;
+  
+  & > .row + .row {
+    margin-top: rem(30);
+  }
+
+  h2 {
+    font: {
+      size: rem(32);
+    }
+    @include d(s) {
+      margin-top: rem(10);
+    }
+  }
+
+  p {
+    margin: {
+      top: rem(20);
+      bottom: rem(20);
+    };
+  }
+}
